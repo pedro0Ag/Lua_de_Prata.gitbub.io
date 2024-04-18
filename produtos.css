@@ -1,0 +1,119 @@
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cabeça {
+    background-image: linear-gradient( rgb(85, 201, 255) ,rgba(94, 55, 236, 0.555));
+    color: #fff; 
+    padding: 20px 0;
+    border-radius: 9px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    background-image:linear-gradient(  rgb(85, 255, 218)
+    ,rgba(94, 55, 236, 0.555));
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 9px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px 0;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .main {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+  
+        
+/* Estilos para a seção de produtos */
+.products {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    margin-bottom: 10px;
+}
+
+.product p {
+    color: #666;
+}

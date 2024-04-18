@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cabeça {
+    background-image: linear-gradient( rgb(85, 255, 218) ,rgba(94, 55, 236, 0.555));
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 9px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer {
+    border-radius: 9px;
+    background-image: linear-gradient(  rgb(85, 255, 218)
+     ,rgba(94, 55, 236, 0.555));
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.img{
+    border-radius:180px;
+}
+
+#galeria > div{
+    width: 32%;
+    box-sizing: border-box;
+    padding: 19px;
+}
+
+.detalhes {
+    display: none;
+}
+
+.foto img{
+    border-radius:180px;
+    display: block;
+}
+
+.foto:target{
+    width: 50%;
+    position: fixed;
+    top: 15px;
+    left: 25%;
+    padding: 10px;
+    border: solid 1px #ffffff;
+    box-shadow: 0 0 10px 1px #f3f3f3;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.foto:target .detalhes{
+    display: block;
+}
+
+.btn-pedido {
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(85, 255, 218);
+}
+
+.btn-pedido a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    img{
+        width: 150%;
+    }
+
+    .foto:target{
+        width: 0%;
+        position: fixed;
+        top: 15px;
+        left: 25%;
+        padding: 10px;
+        border: solid 1px #ffffff;
+        box-shadow: 0 0 10px 1px #f3f3f3;
+        background: #fff;
+        border-radius: 20px;
+    }
+
+    .foto:target img{ 
+        width: 100%;
+    }
+
+    .foto:target a{
+        display: flex;
+        justify-content: center;
+    }
+
+    #galeria > div{
+        width: 32%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    pre{
+        display: flex;
+        justify-content: center;
+    }
+
+    p{
+        font-size: 14px;
+        text-align: center;   
+    }
+
+    #galeria.produt{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .cabeça {
+        padding: 10px 0;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .main {
+        padding: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
