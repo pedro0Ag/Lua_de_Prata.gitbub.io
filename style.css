@@ -1,16 +1,19 @@
+/* Reset de estilos */
 body {
     margin: 0;
     padding: 0;
     color: #333;
 }
 
+/* Layout e estrutura */
 .container {
     width: 90%;
     margin: 0 auto;
 }
 
+/* Estilos do cabeçalho */
 .cabeça {
-    background-image: linear-gradient( rgb(85, 255, 218) ,rgba(94, 55, 236, 0.555));
+    background-image: linear-gradient(rgb(85, 255, 218), rgba(94, 55, 236, 0.555));
     color: #fff;
     padding: 20px 0;
     border-radius: 9px;
@@ -37,6 +40,7 @@ body {
     font-size: 19px;
 }
 
+/* Estilos do conteúdo principal */
 .main {
     padding: 20px;
     display: flex;
@@ -49,10 +53,10 @@ h2 {
     text-align: center;
 }
 
+/* Estilos do rodapé */
 .footer {
     border-radius: 9px;
-    background-image: linear-gradient(  rgb(85, 255, 218)
-     ,rgba(94, 55, 236, 0.555));
+    background-image: linear-gradient(rgb(85, 255, 218), rgba(94, 55, 236, 0.555));
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -60,11 +64,16 @@ h2 {
     width: 100%;
 }
 
-.img{
-    border-radius:180px;
+/* Estilos das imagens */
+.img {
+    max-width: 330px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 90px;
 }
 
-#galeria > div{
+/* Estilos da galeria */
+#galeria > div {
     width: 32%;
     box-sizing: border-box;
     padding: 19px;
@@ -74,12 +83,12 @@ h2 {
     display: none;
 }
 
-.foto img{
-    border-radius:180px;
+.foto img {
+    border-radius: 120px;
     display: block;
 }
 
-.foto:target{
+.foto:target {
     width: 50%;
     position: fixed;
     top: 15px;
@@ -91,10 +100,11 @@ h2 {
     border-radius: 20px;
 }
 
-.foto:target .detalhes{
+.foto:target .detalhes {
     display: block;
 }
 
+/* Estilos dos botões de pedido */
 .btn-pedido {
     border: none;
     border-radius: 7px;
@@ -107,18 +117,17 @@ h2 {
     font-weight: 600;
 }
 
-
 /* Responsividade */
 @media screen and (max-width: 768px) {
     .container {
         width: 95%;
     }
 
-    img{
+    img {
         width: 150%;
     }
 
-    .foto:target{
+    .foto:target {
         width: 0%;
         position: fixed;
         top: 15px;
@@ -130,38 +139,37 @@ h2 {
         border-radius: 20px;
     }
 
-    .foto:target img{ 
+    .foto:target img {
         width: 100%;
     }
 
-    .foto:target a{
+    .foto:target a {
         display: flex;
         justify-content: center;
     }
 
-    #galeria > div{
-        width: 32%;
+    #galeria > div {
+        width: 48%;
         box-sizing: border-box;
         padding: 10px;
     }
 
-    pre{
+    pre {
         display: flex;
         justify-content: center;
     }
 
-    p{
+    p {
         font-size: 14px;
-        text-align: center;   
+        text-align: center;
     }
 
-    #galeria.produt{
+    #galeria.produt {
         display: flex;
         flex-direction: column;
-        align-items:center;
-        width: 90%;
+        align-items: center;
+        width: 81%;
     }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -171,6 +179,7 @@ h2 {
     .logo {
         font-size: 20px;
     }
+
     .nav ul li {
         display: block;
         margin: 10px 0;
@@ -182,3 +191,4 @@ h2 {
         font-size: 20px;
     }
 }
+
